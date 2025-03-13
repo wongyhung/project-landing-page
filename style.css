@@ -93,5 +93,27 @@ a:hover {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.content1 img {
+    height: auto;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.content1 {
+    display: flex;
+    padding: 10px 300px;
+    justify-content: center;
+}
+
+.content1boxes {
+    display: flex;
+    flex-direction: column;
     margin: 50px;
+    font-size: 18px;
+    color: #454546a1;
+    text-align: center;
 }
