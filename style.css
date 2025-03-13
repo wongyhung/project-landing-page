@@ -17,20 +17,20 @@ a:hover {
     background-color: #1f2937;
     display: flex;
     padding: 15px 200px;
+    justify-content: space-between;
 }
 
 .headerlogo {
     display: inline;
     color: #f9faf8;
     font-size: 24px;
-    flex: auto;
+
 }
 
 .headerlink {
     display: inline;
-    color: #e5e7eb;
+    color: #e5e7eba8;
     font-size: 18px;
-    flex: auto;
     margin: 0px 20px;
 }
 
@@ -41,22 +41,18 @@ a:hover {
     padding: 50px 200px;
 }
 
+.bannercontent {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
 .tokyotower {
     width: auto;
     height: 350px;
-    margin: 0px 0px 0px 150px;
-}
-
-.bannercontent {
-    flex: auto;
-    display: flex;
-
 }
 
 .bannercontentleft {
-    font-size: 18px;
-    color: #e5e7eb;
-    flex: 1;
     padding: 50px 0px;
 }
 
@@ -64,13 +60,18 @@ a:hover {
     font-size: 48px;
     color: #f9f1f8;
     font-weight: 900;
-    flex: auto;
+}
+
+.bannercontenttext {
+    font-size: 18px;
+    color: #e5e7eba8;
 }
 
 .bannerbutton {
     background-color: #2e73fc;
     color: rgb(255, 255, 255);
     font-size: 24px;
+    font-weight: bold;
     width: 150px;
     height: auto;
     margin-top: 20px;
@@ -84,9 +85,6 @@ a:hover {
     color: white;
 }
 
-.bannercontentright {
-    flex: 1;
-}
 
 .contenttitle {
     text-align: center;
@@ -167,7 +165,7 @@ a:hover {
 
 .content3right button {
     font-size: 18px;
-    padding: 5px 35px;
+    padding: 5px 30px;
     color: white;
     background-color: #3882f6;
     border-style: solid;
