@@ -1,10 +1,22 @@
 * {
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
 
 .header {
     background-color: #1f2937;
     display: flex;
+    padding: 15px 200px;
 }
 
 .headerlogo {
@@ -12,7 +24,6 @@
     color: #f9faf8;
     font-size: 24px;
     flex: auto;
-    margin: 10px 50px 10px 50px;
 }
 
 .headerlink {
@@ -20,16 +31,33 @@
     color: #e5e7eb;
     font-size: 18px;
     flex: auto;
-    margin: 10px;
+    margin: 0px 20px;
 }
 
 .banner {
     background-color: #1f2937;
     display: flex;
+    height: 475px;
+    padding: 50px 200px;
+}
+
+.tokyotower {
+    width: auto;
+    height: 350px;
+    margin: 0px 0px 0px 150px;
 }
 
 .bannercontent {
     flex: auto;
+    display: flex;
+
+}
+
+.bannercontentleft {
+    font-size: 18px;
+    color: #e5e7eb;
+    flex: 1;
+    padding: 50px 0px;
 }
 
 .bannercontenthero {
@@ -39,12 +67,31 @@
     flex: auto;
 }
 
-.bannercontentleft {
-    font-size: 18px;
-    color: #e5e7eb;
-    flex: auto;
+.bannerbutton {
+    background-color: #2e73fc;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.bannerbutton:hover {
+    background-color: #265ecf;
+    color: white;
 }
 
 .bannercontentright {
-    flex: auto;
+    flex: 1;
+}
+
+.contenttitle {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin: 50px;
 }
