@@ -173,6 +173,11 @@ header {
     border-radius: 10px;
 }
 
+.content3right button:hover {
+    background-color: red;
+    color: blue;
+}
+
 footer {
     background-color: #1f2937;
     display: flex;
