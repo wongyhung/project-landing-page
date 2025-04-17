@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
@@ -47,6 +48,12 @@ header {
     align-items: center;
     gap: 50px;
     max-width: 1400px;
+    transition: opacity 5s ease 0s;
+    opacity: 0;
+}
+
+.bannercontent.loaded {
+    opacity: 1;
 }
 
 .tokyotower {
@@ -95,6 +102,12 @@ header {
     font-weight: 900;
     margin-top: 50px;
     margin-bottom: 10px;
+    transition: opacity 3s ease 0s;
+    opacity: 0;
+}
+
+.contenttitle.loaded {
+    opacity: 1;
 }
 
 .content1 img {
@@ -123,8 +136,31 @@ header {
     font-size: 18px;
     color: #454546a1;
     text-align: center;
+    opacity: 0;
 }
 
+.content1box1, .content1box4 {
+    transition: transform 0.5s ease 0.5s, opacity 0.5s ease 0.5s;
+}
+
+.content1box2, .content1box3 {
+    transition: transform 0.5s ease 0s, opacity 0.5s ease 0s;
+}
+
+.content1box1 { transform: translateX(-100px); }
+.content1box2 { transform: translateX(-100px); }
+.content1box3 { transform: translateX(100px); }
+.content1box4 { transform: translateX(100px); }
+
+.content1box1.loaded, .content1box4.loaded {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.content1box2.loaded, .content1box3.loaded {
+    transform: translateX(0px);
+    opacity: 1;
+}
 
 .content2 {
     display: flex;
@@ -140,6 +176,15 @@ header {
     font-weight: 300;
     color: #1f2937;
     text-align: left;
+}
+
+.quote, .quotename {
+    transition: opacity 2s ease-in 0s;
+    opacity: 0;
+}
+
+.quote.loaded, .quotename.loaded {
+    opacity: 1;
 }
 
 .quotename {
@@ -251,6 +296,10 @@ footer {
 
     .bodycontent {
         margin: 0 1rem;
+    }
+
+    .contenttitle {
+        font-size: 24px;
     }
 
     .content2 {
