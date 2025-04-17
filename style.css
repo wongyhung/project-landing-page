@@ -51,7 +51,7 @@ header {
 
 .tokyotower {
     width: auto;
-    height: 350px;
+    height: 320px;
 }
 
 .bannercontentleft {
@@ -112,6 +112,7 @@ header {
 .bodycontent {
     max-width: 2400px;
     justify-self: center;
+    margin: 0 5rem;
 }
 
 .content1boxes {
@@ -123,6 +124,7 @@ header {
     color: #454546a1;
     text-align: center;
 }
+
 
 .content2 {
     display: flex;
@@ -145,7 +147,7 @@ header {
     font-size: 32px;
     color: black;
     font-weight: bold;
-
+    
 }
 
 .content3 {
@@ -171,6 +173,12 @@ header {
     color: white;
 }
 
+.content3left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .content3text {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.523);
@@ -194,8 +202,86 @@ header {
 footer {
     background-color: #1f2937;
     display: flex;
-    height: 100px;
+    height: 50px;
     color: #e5e7eba8;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .header {
+        padding: 15px 3rem;
+        gap: 1rem;
+    }
+    .banner {
+        padding: 3rem 100px;
+    }
+
+    .headerlink {
+        margin: 0;
+    }
+
+    .contenttitle {
+        margin-top: 2rem;
+    }
+
+    .bannercontent {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .bannercontenthero {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bannercontentleft {
+        padding: 0;
+    }
+
+    .content1 {
+        flex-direction: column;
+    }
+
+    .content1boxes {
+        max-width: 500px;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    .bodycontent {
+        margin: 0 1rem;
+    }
+
+    .content2 {
+        padding: 50px 3rem;
+    }
+
+    .quote {
+        font-size: medium;
+    }
+
+    .quotename {
+        font-size: medium;
+    }
+
+    .content3 {
+        padding: 2rem 0;
+    }
+
+    .content3title, .content3text {
+        font-size: medium;
+    }
+
+    .content3box {
+        flex-direction: column;
+        padding: 1rem;
+        min-width: 250px;
+        margin: 0px 3rem;
+        gap: 1rem;
+    }
+
+    .content3right > button {
+        font-size: small;
+    }
 }
